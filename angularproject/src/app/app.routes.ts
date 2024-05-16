@@ -7,7 +7,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 import { PrivadoComponent } from './components/privado/privado.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
-
+import { NoEncontradoComponent } from './components/no-encontrado/no-encontrado.component';{ }
 
 
 
@@ -20,4 +20,7 @@ export const routes: Routes = [
     { path: "registrarse", component:  RegistrarseComponent  },
     { path: "privado", component: PrivadoComponent },
     { path: "servicios", component: ServiciosComponent },
+    { path: "", redirectTo: "inicio" , pathMatch: "full" },
+    { path: "**", component: NoEncontradoComponent, title: "404" },
+
 ];
