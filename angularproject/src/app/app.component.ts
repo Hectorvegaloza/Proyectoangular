@@ -11,17 +11,12 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
 
 
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NavegacionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+export class AppComponent {}
 
-
-
-export class AppComponent {
-  
-}
